@@ -1,0 +1,17 @@
+body {
+  background: #001534;
+}
+
+.boite {
+  height: 100px;
+  width: 100px;
+  background-color: #db464b;
+  border: 2px solid #15DEA5;
+}
+
+p {
+  color: #D6FFF5;
+  padding-top: 35px;
+}
+
+/*# sourceMappingURL=style.css.map */

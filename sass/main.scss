@@ -1,0 +1,19 @@
+@import "./utils/variables";
+
+
+body{
+    background: $color-secondary;
+}
+
+.boite{
+    height: 100px;
+    width: 100px;
+    background-color: $color-invalid;
+    border: 2px solid $color-secondary;
+}
+
+p
+{
+    color: $color-accent;
+    padding-top: 35px;
+}
