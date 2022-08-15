@@ -2,16 +2,28 @@ body {
   background: #001534;
 }
 
+.les2boites {
+  display: flex;
+  gap: 20px;
+}
+
 .boite {
   height: 100px;
   width: 100px;
   background-color: #db464b;
+  border: 2px solid #D6FFF5;
+}
+
+.boite2 {
+  height: 100px;
+  width: 100px;
+  background-color: #D6FFF5;
   border: 2px solid #15DEA5;
 }
 
 p {
   color: #D6FFF5;
-  padding-top: 35px;
+  padding-top: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
