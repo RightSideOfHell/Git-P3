@@ -1,7 +1,12 @@
-$color-primary: #15DEA5;
-$color-secondary: #001534;
-$color-accent: #D6FFF5;
-$color-white: #fff;
-$color-invalid: #db464b;
+//breakpoints
+$breakpoints: (
+    mobile: 480px
+);
 
-$heading-shadow-size: .55rem;
+//colors
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
+
+//pictures

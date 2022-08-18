@@ -1,29 +1,51 @@
-body {
-  background: #001534;
-}
-
-.les2boites {
-  display: flex;
-  gap: 20px;
-}
-
-.boite {
-  height: 100px;
-  width: 100px;
-  background-color: #db464b;
-  border: 2px solid #D6FFF5;
-}
-
-.boite2 {
-  height: 100px;
-  width: 100px;
-  background-color: #D6FFF5;
-  border: 2px solid #15DEA5;
-}
-
 p {
-  color: #D6FFF5;
-  padding-top: 15px;
+  font-family: "Roboto", sans-serif;
+  margin: 2px;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+h4 {
+  margin: 2px;
+}
+
+.resto-image {
+  height: 150px;
+  width: 200px;
+}
+
+.location {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.fa-location-dot {
+  height: 20px;
+  padding: 5px;
+}
+
+.resto-presentation {
+  display: flex;
+}
+
+ol {
+  padding: 0;
+}
+
+li {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */

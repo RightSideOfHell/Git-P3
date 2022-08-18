@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  margin: 2px;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 24px;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+h4 {
+  margin: 2px;
+}
+
+.resto-image {
+  height: 150px;
+  width: 200px;
+}
+
+.location {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fa-location-dot {
+  height: 20px;
+  padding: 5px;
+}
+
+.resto-presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ol {
+  padding: 0;
+}
+
+li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Nhc3MvbWFpbi5zY3NzIiwiLi4vc3R5bGUuY3NzIiwiLi4vLi4vLi4vc2Fzcy9iYXNlL190eXBvZ3JhcGh5LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBSUE7RUFFSSxTQUFBO0FDSko7O0FEY0E7RUFFSSxpQ0VsQlU7RUZtQlYsV0FBQTtBQ1pKOztBRGVBO0VBQ0ksaUNFdEJlO0VGdUJmLGVBQUE7QUNaSjs7QURjQTtFQUNJLGlDRTNCVTtBRGdCZDs7QURjQTtFQUNJLFdBQUE7QUNYSjs7QURhQTtFQUNJLGFBQUE7RUFDQSxZQUFBO0FDVko7O0FEYUE7RUFDSSxZQUFBO0VBQ0Esb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7RUFDQSx3QkFBQTtNQUFBLHFCQUFBO1VBQUEsdUJBQUE7RUFDQSx5QkFBQTtNQUFBLHNCQUFBO1VBQUEsbUJBQUE7QUNWSjs7QURZQTtFQUNJLFlBQUE7RUFDQSxZQUFBO0FDVEo7O0FEWUE7RUFFSSxvQkFBQTtFQUFBLG9CQUFBO0VBQUEsYUFBQTtBQ1ZKOztBRGFBO0VBQ0ksVUFBQTtBQ1ZKOztBRFlBO0VBQ0ksb0JBQUE7RUFBQSxvQkFBQTtFQUFBLGFBQUE7QUNUSiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */

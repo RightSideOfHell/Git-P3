@@ -1,29 +1,64 @@
 @import "./utils/variables";
+@import "./utils/mixins";
+@import "./base/typography";
 
 
-body{
-    background: $color-secondary;
-}
-
-.les2boites
+.big-logo
 {
-    display: flex;
-    gap: 20px;
-}
-.boite{
-    height: 100px;
-    width: 100px;
-    background-color: $color-invalid;
-    border: 2px solid $color-accent;
-}
-.boite2{
-    height: 100px;
-    width: 100px;
-    background-color: $color-accent;
-    border: 2px solid #15DEA5;
+
 }
 p
 {
-    color: $color-accent;
-    padding-top: 15px;
+    font-family: $police-texte;
+    margin: 2px;
+}
+
+h1{
+    font-family: $police-texte;
+    font-size: 30px;
+}
+h2{
+    font-family: $police-texte;
+}
+
+h3{
+    font-family: $police-texte;
+}
+
+h4{
+    margin: 2px;
+}
+.resto-image{
+    height: 150px;
+    width: 200px;
+}
+
+.location{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-location-dot{
+    height: 20px;
+    padding: 5px;
+}
+
+.resto-presentation{
+
+    display: flex;
+}
+
+ol{
+    padding: 0;
+}
+li{
+    display: flex;
+}
+.resto-presentation-texte{
+    
+}
+
+.liste-block{
+
 }
