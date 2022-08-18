@@ -2,3 +2,25 @@ body{
     width: 100%;
     box-sizing: border-box;
 }
+
+p
+{
+    font-family: $police-texte;
+    margin: 2px;
+}
+
+h1{
+    font-family: $police-texte;
+    font-size: 30px;
+}
+h2{
+    font-family: $police-texte;
+}
+
+h3{
+    font-family: $police-texte;
+}
+
+h4{
+    margin: 2px;
+}

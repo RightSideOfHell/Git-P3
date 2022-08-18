@@ -1,3 +1,8 @@
+body {
+  width: 100%;
+  box-sizing: border-box;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   margin: 2px;
@@ -20,6 +25,20 @@ h4 {
   margin: 2px;
 }
 
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  background-color: #9356DC;
+}
+.restaurants__liste {
+  width: 90%;
+  margin: auto;
+}
+
+.resto-presentation {
+  display: flex;
+}
+
 .resto-image {
   height: 150px;
   width: 200px;
@@ -34,10 +53,6 @@ h4 {
 .fa-location-dot {
   height: 20px;
   padding: 5px;
-}
-
-.resto-presentation {
-  display: flex;
 }
 
 ol {
