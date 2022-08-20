@@ -1,6 +1,25 @@
 body {
+  margin: auto;
   width: 100%;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }
 
 p {
@@ -9,43 +28,20 @@ p {
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 30px;
+  font-size: 22px;
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
-}
-
-h3 {
-  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bolder;
 }
 
 h4 {
-  margin: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-.restaurants {
-  display: flex;
-  flex-direction: column;
-  background-color: #9356DC;
-}
-.restaurants__liste {
-  width: 90%;
-  margin: auto;
-}
-
-.resto-presentation {
-  display: flex;
-}
-
-.resto-image {
-  height: 150px;
-  width: 200px;
-}
-
-.location {
-  height: 50px;
+.localisation {
   display: flex;
   justify-content: center;
 }
@@ -55,12 +51,134 @@ h4 {
   padding: 5px;
 }
 
-ol {
-  padding: 0;
+.reserver {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+.reserver__titre {
+  width: 75%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.reserver__texte {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  font-size: 16px;
+  color: grey;
 }
 
-li {
+.navigation {
+  margin-bottom: 50px;
+}
+
+.restaurants {
+  width: 90%;
+  margin: auto;
   display: flex;
+  flex-direction: column;
+}
+.restaurants__liste {
+  width: 100%;
+}
+.restaurants__liste__block {
+  width: 100%;
+  margin-bottom: 30px;
+  justify-content: center;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 1px 1px 10px rgb(153, 153, 153);
+}
+.restaurants__liste__block__image {
+  align-items: center;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+
+.resto__presentation {
+  width: 99%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.resto__presentation__texte {
+  color: black;
+  padding: 10px;
+}
+.resto__presentation__heart-icon {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.explore_button {
+  height: 50px;
+  width: 200px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 10px;
+  align-self: center;
+  border: transparent;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 1px 3px 10px rgb(158, 158, 158);
+  background: #FF79DA;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+
+.big__logo {
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fonctionnement {
+  width: 100%;
+}
+.fonctionnement__titre {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.fonctionnement__presentation {
+  width: 90%;
+  margin: auto;
+  padding: 0;
+}
+.fonctionnement__presentation__liste {
+  display: flex;
+  width: 290px;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 1px 1px 5px rgb(129, 129, 129);
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  gap: 20px;
+}
+.fonctionnement__presentation__liste__texte {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+  font-size: 16px;
+}
+.fonctionnement__presentation__liste__icone {
+  padding: 5px;
+  color: grey;
 }
 
 /*# sourceMappingURL=style.css.map */

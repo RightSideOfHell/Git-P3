@@ -1,20 +1,41 @@
+.navigation{
+    margin-bottom: 50px
+}
 .restaurants{
+    width: 90%;
+    margin: auto;
     display: flex;
     flex-direction: column;
-    background-color: $color-primary;
     &__liste{
-        width: 90%;
-        margin: auto;
+        width: 100%;
+        &__block{
+            width: 100%;
+            margin-bottom: 30px;
+            justify-content: center;
+            border-radius: 15px 15px 15px 15px;
+            box-shadow: 1px 1px 10px rgb(153, 153, 153);
+            &__image{
+                align-items: center;
+                height: 200px;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 15px 15px 0 0;
+            }
+        }
     }
 }
-.resto-presentation-texte{
-
-}
-.resto-presentation{
-
+.resto__presentation{
+    width: 99%;
+    margin: auto;
     display: flex;
+    justify-content: space-between;
+    &__texte{
+        color: black;
+        padding: 10px;
+    }
+    &__heart-icon{
+        padding-top: 20px;
+        padding-right: 20px;
+    }
 }
-.resto-image{
-    height: 150px;
-    width: 200px;
-}
+

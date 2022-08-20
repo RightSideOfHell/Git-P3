@@ -1,0 +1,35 @@
+.fonctionnement{
+    width: 100%;
+    &__titre{
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    &__presentation{
+        width: 90%;
+        margin: auto;
+        padding: 0;
+        &__liste{
+            display: flex;
+            width: 290px;
+            border-radius: 15px 15px 15px 15px;
+            box-shadow: 1px 1px 5px rgb(129, 129, 129);
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            gap: 20px;
+            &__texte{
+                margin-top: auto;
+                margin-bottom: auto;
+                text-align: center;
+                font-size: 16px;
+            }
+            &__icone{
+                padding: 5px;
+                color: grey;
+            }
+        }
+    }
+}

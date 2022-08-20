@@ -3,31 +3,6 @@
 @import "./base/typography";
 @import "./base/bases";
 @import "./layout/restaurants";
-
-.big-logo
-{
-
-}
-
-.location{
-    height: 50px;
-    display: flex;
-    justify-content: center;
-}
-
-.fa-location-dot{
-    height: 20px;
-    padding: 5px;
-}
-
-ol{
-    padding: 0;
-}
-li{
-    display: flex;
-}
-
-
-.liste-block{
-
-}
+@import "./composants/buttons";
+@import "./layout/header";
+@import "./layout/fonctionnement"

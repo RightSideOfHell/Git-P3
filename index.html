@@ -13,91 +13,93 @@
 
     <body>
         <header>
-            <img src="images/logo/ohmyfood.png" alt="ohmyfood-logo" class="big-logo">
+            <img src="images/logo/ohmyfood.png" alt="ohmyfood-logo" class="big__logo">
         </header>
 
        <main>
-            <div class="location">
+            <div class="localisation">
                 <i class="fa fa-solid fa-location-dot"></i>
                 <p>Paris, Belleville</p>
             </div>
             <div class="reserver">
-                <h1>Réserver le menu qui vous convient</h1>
-                <p>Découvrer des restaurants d'exception, séléctionnés par nos soins.</p>
+                <h1 class="reserver__titre">Réserver le menu qui vous convient</h1>
+                <p class="reserver__texte">Découvrer des restaurants d'exception, séléctionnés par nos soins.</p>
                 <button class="explore_button">
                     <span class="explore">Explorer nos restaurants</span>
                 </button>
             </div>
-            <nav class="navigation">
-                <h2>Fonctionnement</h2>
-                <ol>
-                    <li>
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                        <p>Choisissez un restaurant</p>
+            <div class="fonctionnement">
+                <h2 class="fonctionnement__titre">Fonctionnement</h2>
+                <ol class="fonctionnement__presentation">
+                    <li class="fonctionnement__presentation__liste">
+                        <i class="fa-solid fa-mobile-screen-button fonctionnement__presentation__liste__icone"></i>
+                        <p class="fonctionnement__presentation__liste__texte">Choisissez un restaurant</p>
                     </li>
-                    <li>
-                        <i class="fa-solid fa-list"></i>
-                        <p>Composez votre menu</p>
+                    <li class="fonctionnement__presentation__liste">
+                        <i class="fa-solid fa-list fonctionnement__presentation__liste__icone""></i>
+                        <p class="fonctionnement__presentation__liste__texte">Composez votre menu</p>
                     </li>
-                    <li>
-                        <i class="fa-solid fa-store"></i>
-                        <p>Dégustez au restaurant</p>
+                    <li class="fonctionnement__presentation__liste">
+                        <i class="fa-solid fa-store fonctionnement__presentation__liste__icone""></i>
+                        <p class="fonctionnement__presentation__liste__texte">Dégustez au restaurant</p>
                     </li>
                 </ol>
-            </nav>
-            <article classe="restaurants">
-                <h2>Restaurants</h2>
-                <div class="restaurants__liste">
-                    <div class="liste__block">
-                        <a href="">
-                            <img src="/images/restaurants/palette-du-gout.jpg" alt="palette-du-gout" class="resto-image">
-                            <div class="resto-presentation">
-                                <div class="resto-presentation-texte">
-                                    <h4>La palette du goût</h4>
-                                    <p>Ménilmontant</p>
+            </div>
+            <section class="navigation">
+                <article class="restaurants">
+                    <h2>Restaurants</h2>
+                    <div class="restaurants__liste">
+                        <div class="restaurants__liste__block">
+                            <a href="">
+                                <img src="/images/restaurants/palette-du-gout.jpg" alt="palette-du-gout" class="restaurants__liste__block__image">
+                                <div class="resto__presentation">
+                                    <div class="resto__presentation__texte">
+                                        <h4>La palette du goût</h4>
+                                        <p>Ménilmontant</p>
+                                    </div>
+                                    <i class="fa-solid fa-heart resto__presentation__heart-icon"></i>
                                 </div>
-                                <i class="fa-solid fa-heart"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="liste__block">
-                        <a href="">
-                            <img src="/images/restaurants/la-note-enchantee.jpg" alt="note-enchantée" class="resto-image">
-                            <div class="resto-presentation">
-                                <div class="resto-presentation-texte">
-                                    <h4>La note enchantée</h4>
-                                    <p>Charonne</p>
+                            </a>
+                        </div>
+                        <div class="restaurants__liste__block">
+                            <a href="">
+                                <img src="/images/restaurants/la-note-enchantee.jpg" alt="note-enchantée" class="restaurants__liste__block__image">
+                                <div class="resto__presentation">
+                                    <div class="resto__presentation__texte">
+                                        <h4>La note enchantée</h4>
+                                        <p>Charonne</p>
+                                    </div>
+                                    <i class="fa-solid fa-heart resto__presentation__heart-icon"></i>
                                 </div>
-                                <i class="fa-solid fa-heart"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="liste-block">
-                        <a href="">
-                            <img src="/images/restaurants/a-la-francaise.jpg" alt="à-la-française" class="resto-image">
-                            <div class="resto-presentation">
-                                <div class="resto-presentation-texte">
-                                    <h4>À la française</h4>
-                                    <p>Cité Rouge</p>
+                            </a>
+                        </div>
+                        <div class="restaurants__liste__block">
+                            <a href="">
+                                <img src="/images/restaurants/a-la-francaise.jpg" alt="à-la-française" class="restaurants__liste__block__image">
+                                <div class="resto__presentation">
+                                    <div class="resto__presentation__texte">
+                                        <h4>À la française</h4>
+                                        <p>Cité Rouge</p>
+                                    </div>
+                                    <i class="fa-solid fa-heart resto__presentation__heart-icon"></i>
                                 </div>
-                                <i class="fa-solid fa-heart"></i>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="liste-block">
-                        <a href="">
-                            <img src="/images/restaurants/delice-des-sens.jpg" alt="délice-des-sens" class="resto-image">
-                            <div class="resto-presentation">
-                                <div class="resto-presentation-texte">
-                                    <h4>Le délice des sens</h4>
-                                    <p>Folie-Méricourt</p>
+                            </a>
+                        </div>
+                        <div class="restaurants__liste__block">
+                            <a href="">
+                                <img src="/images/restaurants/delice-des-sens.jpg" alt="délice-des-sens" class="restaurants__liste__block__image">
+                                <div class="resto__presentation">
+                                    <div class="resto__presentation__texte">
+                                        <h4>Le délice des sens</h4>
+                                        <p>Folie-Méricourt</p>
+                                    </div>
+                                    <i class="fa-solid fa-heart resto__presentation__heart-icon"></i>
                                 </div>
-                                <i class="fa-solid fa-heart"></i>
-                            </div>
-                        </a>
+                            </a>
+                        </div>
                     </div>
-                </div>
-            </article>
+                </article>
+            </section>
             <footer>
                 <img src="images/logo/ohmyfood.png" alt="ohmyfood-logo" class="small-logo">
                 <div>
