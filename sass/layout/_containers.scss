@@ -1,0 +1,31 @@
+.localisation {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-location-dot{
+    height: 20px;
+    padding: 5px;
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    &__titre{
+        width: 75%;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    &__texte{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        font-size: 16px;
+        color: grey;   
+    }
+}

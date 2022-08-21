@@ -12,21 +12,23 @@
         padding: 0;
         &__liste{
             display: flex;
-            width: 290px;
-            border-radius: 15px 15px 15px 15px;
+            width: 90%;
+            border-radius: 25px 25px 25px 25px;
             box-shadow: 1px 1px 5px rgb(129, 129, 129);
             margin: auto;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            padding: 25px;
             gap: 20px;
             &__texte{
                 margin-top: auto;
                 margin-bottom: auto;
                 text-align: center;
-                font-size: 16px;
+                font-weight: 700;
+                font-size: 20px;
             }
             &__icone{
+                font-size: 25px;
                 padding: 5px;
                 color: grey;
             }

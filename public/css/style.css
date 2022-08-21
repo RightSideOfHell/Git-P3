@@ -3,7 +3,6 @@ body {
   width: 100%;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  text-decoration: none;
 }
 
 a:link {
@@ -24,7 +23,7 @@ a:active {
 
 p {
   font-family: "Roboto", sans-serif;
-  margin: 2px;
+  margin: 5px;
 }
 
 h1 {
@@ -32,45 +31,14 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 28px;
   font-weight: bolder;
 }
 
 h4 {
+  font-size: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
-}
-
-.localisation {
-  display: flex;
-  justify-content: center;
-}
-
-.fa-location-dot {
-  height: 20px;
-  padding: 5px;
-}
-
-.reserver {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  margin: auto;
-}
-.reserver__titre {
-  width: 75%;
-  margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-.reserver__texte {
-  width: 90%;
-  margin: auto;
-  text-align: center;
-  font-size: 16px;
-  color: grey;
 }
 
 .navigation {
@@ -111,7 +79,7 @@ h4 {
   color: black;
   padding: 10px;
 }
-.resto__presentation__heart-icon {
+.resto__presentation__heart-icone {
   padding-top: 20px;
   padding-right: 20px;
 }
@@ -161,23 +129,85 @@ header {
 }
 .fonctionnement__presentation__liste {
   display: flex;
-  width: 290px;
-  border-radius: 15px 15px 15px 15px;
+  width: 90%;
+  border-radius: 25px 25px 25px 25px;
   box-shadow: 1px 1px 5px rgb(129, 129, 129);
   margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 25px;
   gap: 20px;
 }
 .fonctionnement__presentation__liste__texte {
   margin-top: auto;
   margin-bottom: auto;
   text-align: center;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 20px;
 }
 .fonctionnement__presentation__liste__icone {
+  font-size: 25px;
   padding: 5px;
+  color: grey;
+}
+
+footer {
+  width: 101%;
+  background-color: rgb(53, 53, 53);
+}
+
+.about {
+  width: 90%;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+.about__more {
+  display: flex;
+  gap: 15px;
+  margin: 5px;
+}
+.about__logo {
+  font-family: "Shrikhand", cursive;
+  width: 120px;
+  color: white;
+  margin-bottom: 20px;
+}
+.about__icone {
+  padding-top: 8px;
+  font-size: 15px;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+}
+
+.fa-location-dot {
+  height: 20px;
+  padding: 5px;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+}
+.presentation__titre {
+  width: 75%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.presentation__texte {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  font-size: 16px;
   color: grey;
 }
 

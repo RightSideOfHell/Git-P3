@@ -3,7 +3,6 @@ body{
     width: 100%;
     box-sizing: border-box;
     font-family: $police-texte;
-    text-decoration: none;
 }
 
 a:link { text-decoration: none; }
@@ -17,49 +16,20 @@ a:active { text-decoration: none; }
 p
 {
     font-family: $police-texte;
-    margin: 2px;
+    margin: 5px;
 }
 
 h1{
     font-size:  22px;
 }
 h2{
-    font-size: 20px;
+    font-size: 28px;
     font-weight: bolder;
 }
 h4{
+    font-size: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
-.localisation {
-    display: flex;
-    justify-content: center;
-}
 
-.fa-location-dot{
-    height: 20px;
-    padding: 5px;
-}
-
-.reserver{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    margin: auto;
-    &__titre{
-        width: 75%;
-        margin: auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-    &__texte{
-        width: 90%;
-        margin: auto;
-        text-align: center;
-        font-size: 16px;
-        color: grey;   
-    }
-}

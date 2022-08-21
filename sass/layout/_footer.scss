@@ -1,0 +1,26 @@
+footer{
+    width: 101%;
+    background-color: $color-quaternary;
+}
+.about{
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    &__more{
+        display: flex;
+        gap: 15px;
+        margin: 5px;
+    }
+    &__logo{
+        font-family: $police-titre-logo;
+        width: 120px;
+        color: white;
+        margin-bottom: 20px;
+    }
+    &__icone{
+        padding-top: 8px;
+        font-size: 15px;
+    }
+}
