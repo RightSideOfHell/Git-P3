@@ -9,18 +9,29 @@ footer{
     padding-bottom: 20px;
     color: white;
     &__more{
+        &__blocks{
+            display: flex;
+            gap: 15px;
+            margin: 7px;
+            align-items: center;
+            @include desktop-up {
+                display: flex;
+                flex-grow: 1;
+                flex-shrink: 1;
+            }
+        }
+        &__logo{
+            font-family: $police-titre-logo;
+            width: 120px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        &__icone{
+            padding-top: 8px;
+            font-size: 15px;
+        }
+    @include desktop-up {
         display: flex;
-        gap: 15px;
-        margin: 5px;
     }
-    &__logo{
-        font-family: $police-titre-logo;
-        width: 120px;
-        color: white;
-        margin-bottom: 20px;
-    }
-    &__icone{
-        padding-top: 8px;
-        font-size: 15px;
     }
 }

@@ -1,37 +1,55 @@
 .fonctionnement{
-    width: 100%;
-    &__titre{
-        width: 90%;
-        margin: auto;
-        margin-top: 50px;
-        margin-bottom: 30px;
-    }
-    &__presentation{
-        width: 90%;
-        margin: auto;
-        padding: 0;
-        &__liste{
-            display: flex;
+        &__titre{
             width: 90%;
-            border-radius: 25px 25px 25px 25px;
-            box-shadow: 1px 1px 5px rgb(129, 129, 129);
             margin: auto;
-            margin-top: 20px;
+            margin-top: 50px;
             margin-bottom: 30px;
-            padding: 25px;
-            gap: 20px;
-            &__texte{
-                margin-top: auto;
-                margin-bottom: auto;
-                text-align: center;
-                font-weight: 700;
-                font-size: 20px;
+        @include tablet-portrait-up {
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        @include desktop-up {
+            margin-top: 100px;
+            margin-bottom: 50px;
+        }
+        }
+        &__presentation{
+            width: 85%;
+            margin: auto;
+            padding: 0;
+            &__liste{
+                display: flex;
+                width: 90%;
+                margin: auto;
+                align-items: center;
+                border-radius: 25px 25px 25px 25px;
+                box-shadow: 1px 1px 5px rgb(129, 129, 129);
+                margin-top: 20px;
+                margin-bottom: 30px;
+                padding: 20px;
+                gap: 10%;
+                &__texte{
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    font-weight: 700;
+                    font-size: 20px;
+                    @include desktop-up {
+                        font-size: 22px;
+                    }
+                }
+                &__icone{
+                    font-size: 25px;
+                    padding: 5px;
+                    color: grey;
+                }
+            @include desktop-up {
+                width: 25%;
             }
-            &__icone{
-                font-size: 25px;
-                padding: 5px;
-                color: grey;
             }
+        @include tablet-portrait-up {
+            width: 90%;
+            display: flex;
+            gap: 30px;
         }
     }
 }

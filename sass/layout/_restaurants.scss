@@ -1,5 +1,9 @@
 .navigation{
-    margin-bottom: 50px
+    margin-bottom: 50px;
+    @include desktop-up {
+        margin-top: 70px;
+        margin-bottom: 200px;
+    }
 }
 .restaurants{
     width: 90%;
@@ -16,12 +20,33 @@
             box-shadow: 1px 1px 10px rgb(153, 153, 153);
             &__image{
                 align-items: center;
-                height: 200px;
+                height: 220px;
                 width: 100%;
                 object-fit: cover;
                 border-radius: 15px 15px 0 0;
+            @include desktop-up {
+                height: 400px;
+            }  
             }
+        @include tablet-portrait-up {
+            width: 45%; 
+            margin-bottom: 80px; 
         }
+        @include desktop-up {
+            width: 45%;
+            height: 500px;
+            margin-bottom: 5%;
+        }  
+        }
+    @include tablet-portrait-up {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    @include desktop-up {
+        width: 100%;
+    }
     }
 }
 .resto__presentation{

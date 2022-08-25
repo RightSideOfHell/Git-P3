@@ -1,10 +1,21 @@
 .localisation {
     display: flex;
     justify-content: center;
+    margin-top: 24px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    background-color: rgb(230, 230, 230);
+    border-top: 1px solid rgb(187, 187, 187);
+    gap: 10px;
+    align-items: center;
+    @include desktop-up {
+
+    }
 }
 
 .fa-location-dot{
     height: 20px;
+    font-size: 22px;
     padding: 5px;
 }
 
@@ -14,18 +25,22 @@
     justify-content: center;
     width: 100%;
     margin: auto;
+    background-color: rgb(240, 240, 240);
     &__titre{
         width: 75%;
         margin: auto;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 45px;
+        margin-bottom: 18px;
         text-align: center;
     }
     &__texte{
         width: 90%;
         margin: auto;
         text-align: center;
-        font-size: 16px;
+        font-size: 22px;
         color: grey;   
+        @include desktop-up {
+            font-size: 28px;
+        }
     }
 }
