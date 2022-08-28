@@ -1,5 +1,5 @@
 footer{
-    width: 101%;
+    width: 100%;
     background-color: $color-quaternary;
 }
 .about{
@@ -12,26 +12,36 @@ footer{
         &__blocks{
             display: flex;
             gap: 15px;
-            margin: 7px;
             align-items: center;
+            color: white;
+            @include tablet-portrait-up {
+                flex-grow: 1;
+            }
             @include desktop-up {
                 display: flex;
                 flex-grow: 1;
                 flex-shrink: 1;
             }
         }
-        &__logo{
-            font-family: $police-titre-logo;
-            width: 120px;
-            color: white;
-            margin-bottom: 20px;
-        }
         &__icone{
-            padding-top: 8px;
             font-size: 15px;
         }
+    @include tablet-portrait-up {
+        display: flex;
+        flex-grow: 1;
+    }
     @include desktop-up {
         display: flex;
+        flex-grow: 1;
     }
     }
+@include tablet-portrait-up {
+    width: 95%;
+}
+@include desktop-up {
+    padding-bottom: 40px;
+    h3 {
+        font-size: 30px;
+    }
+}
 }

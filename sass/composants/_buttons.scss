@@ -1,6 +1,6 @@
 .explore_button{
     height: 65px;
-    width: 270px;
+    width: 290px;
     margin: auto;
     margin-top: 40px;
     margin-bottom: 65px;
@@ -9,8 +9,8 @@
     border: transparent;
     border-radius: 35px 35px 35px 35px;
     box-shadow: 1px 3px 10px rgb(158, 158, 158);
-    background: $color-secondary;
     color: white;
     font-family: $police-texte;
     font-size: 20px;
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
 }

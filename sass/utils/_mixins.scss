@@ -1,14 +1,53 @@
+//breakpoints//
+@mixin tablet-portrait-up {
+  @media (min-width: 650px) { @content; }
+}
+@mixin desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
+//hover//
+@mixin hover {
+  &:hover {
+    background-color: lighten($color-secondary,23%);
+    .fonctionnement__presentation__box__liste__icone{
+      color: $color-primary;
+    }
+  }
+}
+@mixin hover-icon {
+  &:hover, :focus {
+    background: -webkit-gradient(linear, right top, left bottom, from($color-primary), to($color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+  }
+}
+
+@mixin hover-button {
+  &:hover {
+    background: lighten($color: #000000, $amount: 0);
+  }
+  
+}
+
+//Nouveau//
+@mixin new-tag {
+  position: absolute;
+  right: 0;
+  min-width: 120px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin: 15px;
+  background: $color-tertiary;
+  border-radius: 3px 3px 3px 3px;
+  color: darken($color-tertiary,40%);
+}
 
 
-@mixin phone-only {
-    @media (max-width: 480px) { @content; }
-  }
-  @mixin tablet-portrait-up {
-    @media (min-width: 481px) { @content; }
-  }
-  @mixin desktop-up {
-    @media (min-width: 1200px) { @content; }
-  }
-  @mixin big-desktop-up {
-    @media (min-width: 1800px) { @content; }
-  }
