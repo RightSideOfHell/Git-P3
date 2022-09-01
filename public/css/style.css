@@ -529,11 +529,20 @@ footer {
   padding-right: 10px;
 }
 .carte__box__menu__icon {
-  display: none;
-  position: absolute;
-  right: 0;
-  height: 100%;
-  transition: transform 0.4s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #99E2D0;
+  font-size: 26px;
+  width: 60px;
+  border-radius: 0 15px 15px 0;
+  background: #99E2D0;
+  margin: 0;
+}
+.carte__box__menu__icon__check-icon {
+  background: white;
+  color: #99E2D0;
+  border-radius: 50%;
 }
 .carte__box__menu:hover .carte__box__menu__icon {
   display: flex;
@@ -545,13 +554,11 @@ footer {
   border-radius: 0 15px 15px 0;
   background: #99E2D0;
   margin: 0;
-  transform: scale(1.1);
 }
 .carte__box__menu:hover .carte__box__menu__icon__check-icon {
-  color: #99E2D0;
   background: white;
+  color: #99E2D0;
   border-radius: 50%;
-  border-radius: 20px 20px 20px 20px;
 }
 @media (min-width: 1200px) {
   .carte__box {

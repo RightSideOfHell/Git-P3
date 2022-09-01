@@ -42,12 +42,10 @@
       border-radius: 0 15px 15px 0;
       background: $color-tertiary;
       margin: 0;
-      transform: scale(1.1);
       &__check-icon{
-        color: $color-tertiary;
         background: white;
+        color: $color-tertiary;
         border-radius: 50%;
-        border-radius: 20px 20px 20px 20px;
       }
     } 
   }
