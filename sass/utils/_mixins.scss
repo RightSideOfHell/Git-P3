@@ -1,6 +1,9 @@
 //breakpoints//
+@mixin mobile {
+  @media (max-width: 599px) { @content; }
+}
 @mixin tablet-portrait-up {
-  @media (min-width: 650px) { @content; }
+  @media (min-width: 600px) { @content; }
 }
 @mixin desktop-up {
   @media (min-width: 1200px) { @content; }
@@ -19,7 +22,7 @@
   }
 }
 @mixin hover-icon {
-  &:hover, :focus {
+  &:hover {
     background: -webkit-gradient(linear, right top, left bottom, from($color-primary), to($color-secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -27,13 +30,38 @@
   }
 }
 
-@mixin hover-button {
-  &:hover {
-    background: lighten($color: #000000, $amount: 0);
+@mixin hover-check-icon {     
+ &:hover {
+    .carte__box__menu__icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $color-tertiary;
+      font-size: 26px;
+      width: 60px;
+      border-radius: 0 15px 15px 0;
+      background: $color-tertiary;
+      margin: 0;
+      transform: scale(1.1);
+      &__check-icon{
+        color: $color-tertiary;
+        background: white;
+        border-radius: 50%;
+        border-radius: 20px 20px 20px 20px;
+      }
+    } 
   }
-  
 }
 
+@mixin hover-button {
+  &:hover {
+    background: lighten($color-primary, 3%);
+    background: lighten($color-secondary, 3%);
+    box-shadow: darken($color-btn-shadow, 100%);
+}
+}
+
+         
 //Nouveau//
 @mixin new-tag {
   position: absolute;

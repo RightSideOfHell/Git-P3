@@ -1,10 +1,9 @@
 .navigation{
-    margin-bottom: 50px;
-    padding-top: 50px;
+    padding-bottom: 50px;
     background: lighten($bg-color, 6%);
     @include desktop-up {
         margin-top: 70px;
-        margin-bottom: 200px;
+        padding-bottom: 200px;
     }
 }
 .restaurants{
@@ -32,7 +31,7 @@
                 object-fit: cover;
                 border-radius: 15px 15px 0 0;
             @include desktop-up {
-                height: 400px;
+                height: 250px;
             }  
             }
         @include tablet-portrait-up {
@@ -40,9 +39,11 @@
             margin-bottom: 80px; 
         }
         @include desktop-up {
-            width: 45%;
-            height: 500px;
-            margin-bottom: 5%;
+            flex-grow: 1;
+            gap: 20px;
+            max-width: 45%;
+            height: 350px;
+            margin-bottom: 7%;
         }  
         }
     @include tablet-portrait-up {
@@ -56,8 +57,8 @@
     }
 }
 .resto__presentation{
-    width: 99%;
-    margin: auto;
+    width: 90%;
+    margin-left: 5px;
     display: flex;
     justify-content: space-between;
     &__texte{
@@ -67,8 +68,7 @@
     &__heart-icone{
         color: grey;
         font-size: 34px;
-        margin-top: 20px;
-        margin-right: 25px;
+        align-self: center;
         cursor: pointer;
         @include hover-icon
     }

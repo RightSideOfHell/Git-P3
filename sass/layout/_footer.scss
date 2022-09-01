@@ -25,6 +25,7 @@ footer{
         }
         &__icone{
             font-size: 15px;
+            width: 15px;
         }
     @include tablet-portrait-up {
         display: flex;

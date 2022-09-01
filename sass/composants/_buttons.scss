@@ -8,9 +8,18 @@
     align-self: center;
     border: transparent;
     border-radius: 35px 35px 35px 35px;
-    box-shadow: 1px 3px 10px rgb(158, 158, 158);
+    box-shadow: 1px 3px 10px $color-btn-shadow;
     color: white;
     font-family: $police-texte;
     font-size: 20px;
-    background: linear-gradient(to bottom right, $color-secondary, $color-primary);
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary); 
+    @include hover-button
+        
+}
+
+.btn{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 50px;
 }

@@ -18,7 +18,7 @@
             flex-direction: column;
             width: 100%;
             margin: auto;
-            margin-bottom: 100px;
+            margin-bottom: 80px;
             padding: 0;
             flex-wrap: wrap;
             &__box {
@@ -43,8 +43,7 @@
                     justify-content: flex-start;
                     flex-grow: 1;
                     flex-shrink: 1;
-                    min-width: 100px;
-                    width: 90%;
+                    max-width: 420px;
                     background: lighten($bg-color, 6%);
                     border-radius: 25px 25px 25px 25px;
                     box-shadow: 2px 8px 10px $color-shadow;
@@ -58,9 +57,9 @@
                         margin-top: auto;
                         margin-bottom: auto;
                         font-weight: 700;
-                        font-size: 20px;
+                        font-size: 16px;
                         @include desktop-up {
-                            font-size: 22px;
+                            font-size: 16px;
                         }
                     }
                     &__icone{
@@ -83,7 +82,7 @@
                 width: 20%;
             }
             @include desktop-up {
-                max-width: 500px;
+                max-width: 400px;
             }
             }
         @include tablet-portrait-up {
