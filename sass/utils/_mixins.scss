@@ -15,19 +15,29 @@
 //hover//
 @mixin hover {
   &:hover {
+<<<<<<< HEAD
     background: lighten($color-secondary,23%);
+=======
+    background-color: lighten($color-secondary,23%);
+>>>>>>> 98f9700a349ed97afdb40ee4930348ddb3b11467
     .fonctionnement__presentation__box__liste__icone{
       color: $color-primary;
     }
   }
 }
+<<<<<<< HEAD
 
 @mixin hover-icon {
   &:hover, :active {
+=======
+@mixin hover-icon {
+  &:hover {
+>>>>>>> 98f9700a349ed97afdb40ee4930348ddb3b11467
     background: -webkit-gradient(linear, right top, left bottom, from($color-primary), to($color-secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
+<<<<<<< HEAD
     height: 100%;
   }
 }
@@ -44,6 +54,31 @@
 }
 
 
+=======
+  }
+}
+
+@mixin hover-check-icon {     
+ &:hover {
+    .carte__box__menu__icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $color-tertiary;
+      font-size: 26px;
+      width: 60px;
+      border-radius: 0 15px 15px 0;
+      background: $color-tertiary;
+      margin: 0;
+      &__check-icon{
+        background: white;
+        color: $color-tertiary;
+        border-radius: 50%;
+      }
+    } 
+  }
+}
+>>>>>>> 98f9700a349ed97afdb40ee4930348ddb3b11467
 
 @mixin hover-button {
   &:hover {
