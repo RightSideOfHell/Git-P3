@@ -1,0 +1,25 @@
+.explore_button{
+    height: 65px;
+    width: 290px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 65px;
+    padding: 10px;
+    align-self: center;
+    border: transparent;
+    border-radius: 35px 35px 35px 35px;
+    box-shadow: 1px 3px 10px $color-btn-shadow;
+    color: white;
+    font-family: $police-texte;
+    font-size: 20px;
+    background: linear-gradient(to bottom right, $color-secondary, $color-primary); 
+    @include hover-button
+        
+}
+
+.btn{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 50px;
+}

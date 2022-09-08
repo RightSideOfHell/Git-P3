@@ -1,29 +1,12 @@
 @import "./utils/variables";
-
-
-body{
-    background: $color-secondary;
-}
-
-.les2boites
-{
-    display: flex;
-    gap: 20px;
-}
-.boite{
-    height: 100px;
-    width: 100px;
-    background-color: $color-invalid;
-    border: 2px solid $color-accent;
-}
-.boite2{
-    height: 100px;
-    width: 100px;
-    background-color: $color-accent;
-    border: 2px solid #15DEA5;
-}
-p
-{
-    color: $color-accent;
-    padding-top: 15px;
-}
+@import "./utils/mixins";
+@import "./base/typography";
+@import "./base/bases";
+@import "./layout/restaurants";
+@import "./composants/buttons";
+@import "./layout/header";
+@import "./layout/fonctionnement";
+@import "./layout/footer";
+@import "./layout/containers";
+//@import "./layout/animation";
+@import "./utils/keyframes";

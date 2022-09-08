@@ -1,0 +1,48 @@
+footer{
+    width: 100%;
+    background-color: $color-quaternary;
+}
+.about{
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    &__more{
+        &__blocks{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            color: white;
+            @include tablet-portrait-up {
+                flex-grow: 1;
+            }
+            @include desktop-up {
+                display: flex;
+                flex-grow: 1;
+                flex-shrink: 1;
+            }
+        }
+        &__icone{
+            font-size: 15px;
+            width: 15px;
+        }
+    @include tablet-portrait-up {
+        display: flex;
+        flex-grow: 1;
+    }
+    @include desktop-up {
+        display: flex;
+        flex-grow: 1;
+    }
+    }
+@include tablet-portrait-up {
+    width: 95%;
+}
+@include desktop-up {
+    padding-bottom: 40px;
+    h3 {
+        font-size: 30px;
+    }
+}
+}

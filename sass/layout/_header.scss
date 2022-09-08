@@ -1,0 +1,17 @@
+header{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.big__logo{
+    width: 180px;
+    display: block;
+    margin: auto;
+    @include desktop-up{
+        width: 300px;
+    }
+}

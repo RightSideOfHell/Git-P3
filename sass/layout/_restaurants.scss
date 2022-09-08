@@ -1,0 +1,83 @@
+.navigation{
+    padding-bottom: 50px;
+    background: lighten($bg-color, 6%);
+    @include desktop-up {
+        margin-top: 70px;
+        padding-bottom: 200px;
+    }
+}
+.restaurants{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    &__liste{
+        width: 100%;
+        &__block{
+            width: 100%;
+            margin-bottom: 30px;
+            justify-content: center;
+            border-radius: 15px 15px 15px 15px;
+            box-shadow: 2px 7px 10px $color-shadow;
+            position: relative;
+            background: white;
+            &__new{
+                @include new-tag
+            }
+            &__image{
+                align-items: center;
+                height: 220px;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 15px 15px 0 0;
+            @include desktop-up {
+                height: 250px;
+            }  
+            }
+        @include tablet-portrait-up {
+            width: 45%; 
+            margin-bottom: 80px; 
+        }
+        @include desktop-up {
+            flex-grow: 1;
+            gap: 20px;
+            max-width: 45%;
+            height: 330px;
+            margin-bottom: 7%;
+        }  
+        }
+    @include tablet-portrait-up {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    @include desktop-up {
+        width: 100%;
+    }
+    }
+}
+.resto__presentation{
+    width: 90%;
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-between;
+    &__texte{
+        color: black;
+        padding: 10px;
+    }
+    &__icone{
+        font-size: 37px;
+        align-self: center;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        &__heart-icone{
+            color: grey;
+            height: 0;
+            transition: all 0.2s ease-in-out 0s;
+            
+            @include hover-icon
+        }
+    }
+}
+
