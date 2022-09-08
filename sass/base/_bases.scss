@@ -3,12 +3,9 @@ body{
     width: 100%;
     box-sizing: border-box;
     font-family: $police-texte;
-<<<<<<< HEAD
     position: relative;
     z-index: 10;
 
-=======
->>>>>>> 98f9700a349ed97afdb40ee4930348ddb3b11467
 }
 
 //links
@@ -32,38 +29,16 @@ h1{
 }
 
 h2{
-<<<<<<< HEAD
     font-family: $police-titre-logo;
     font-weight: lighter;
     font-size: 24px;
     margin-right: 20px;   
-=======
-    font-weight: bolder;
-    font-size: 32px; 
-}
-
-h3{
-    font-family: $police-titre-logo;
-    font-weight: lighter;
-    font-size: 24px;
-    margin-right: 20px;
->>>>>>> 98f9700a349ed97afdb40ee4930348ddb3b11467
     @include desktop-up{
         font-size: 32px;
     }
 }
 
-<<<<<<< HEAD
 h3{
-=======
-h4{
-    font-size: 16px;
-    font-weight: bolder;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-h5{
->>>>>>> 98f9700a349ed97afdb40ee4930348ddb3b11467
     font-size: 18px;
     font-weight: lighter;
     width: 50px;
@@ -76,7 +51,6 @@ h5{
         margin: auto;
         margin-bottom: 30px;
     }
-<<<<<<< HEAD
 }
 
 h4{
@@ -96,9 +70,6 @@ h5{
     overflow: hidden;
     text-overflow: ellipsis;
     flex-grow: 1;  
-=======
-    
->>>>>>> 98f9700a349ed97afdb40ee4930348ddb3b11467
 }
 
 p

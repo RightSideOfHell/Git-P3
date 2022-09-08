@@ -45,7 +45,6 @@
 .menus{
     background: $bg-color;
     &__all{
-<<<<<<< HEAD
         width: 100%;
         margin: auto;
         background: $bg-color;
@@ -56,18 +55,6 @@
         width: 100%;
         border-radius: 35px 35px 0 0;
         }
-=======
-    width: 100%;
-    margin: auto;
-    background: $bg-color;
-    @include mobile {
-    position: absolute;
-    top: 280px;
-    margin: auto;
-    width: 100%;
-    border-radius: 35px 35px 0 0;
-    }
->>>>>>> 98f9700a349ed97afdb40ee4930348ddb3b11467
     }
     &__img{
         width: 100%;
@@ -87,13 +74,10 @@
             margin-right: 20px;
             display: flex;
             justify-content: space-between;
-<<<<<<< HEAD
             &__heart-icone{
                 align-self: center;
                 font-size: 34px;
             }
-=======
->>>>>>> 98f9700a349ed97afdb40ee4930348ddb3b11467
             @include tablet-portrait-up{
                justify-content: flex-start;
             }
@@ -122,7 +106,6 @@
             background: white;
             cursor: pointer;
             position: relative;
-<<<<<<< HEAD
             animation: slideDown 2s;
             &__main{
                 width: 100%;
@@ -157,34 +140,6 @@
                     }
                 }
             }     
-=======
-            &__main{
-                width: 100%;
-                padding-left: 15px;
-                &__price{
-                    display: flex;
-                    justify-content: space-between;
-                    padding-bottom: 5px;
-                    padding-right: 10px;
-                }
-            }
-            &__icon {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: $color-tertiary;
-                font-size: 26px;
-                width: 60px;
-                border-radius: 0 15px 15px 0;
-                background: $color-tertiary;
-                margin: 0;
-                &__check-icon{
-                    background: white;
-                    color: $color-tertiary;
-                    border-radius: 50%;
-      }
-            }
->>>>>>> 98f9700a349ed97afdb40ee4930348ddb3b11467
         @include hover-check-icon
         }
         @include desktop-up{
