@@ -23,24 +23,31 @@
 }
 
 @mixin hover-icon {
-  &:hover, :active {
-    background: -webkit-gradient(linear, right top, left bottom, from($color-primary), to($color-secondary));
+  &:hover{
+    background: $heart-bg;
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
+    opacity: 1;
     height: 100%;
+    
   }
 }
 
 @mixin hover-check-icon {  
   &:hover { 
-    .carte__box__menu__price__icon { 
+    .carte__box__menu__price__euros {
+      transform: translateX(-10px);
+    } 
+    .carte__box__menu__price__icon {
       transform: scaleX(1);
-      width: 70px;
-      
+      width: 60px; 
     }  
-    .carte__box__menu__price__icon__check-icon{ transform: rotate(360deg); }
-}
+    .carte__box__menu__price__icon__check-icon {  
+      transform: rotate(1turn);
+    }
+  }
 }
 
 
@@ -70,4 +77,5 @@
   color: darken($color-tertiary,40%);
 }
 
+//AnimationDelay//
 

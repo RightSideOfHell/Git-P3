@@ -1,10 +1,11 @@
 body {
   margin: auto;
   width: 100%;
+  height: 1400px;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   position: relative;
-  z-index: 10;
+  z-index: -1;
 }
 
 a:link {
@@ -184,19 +185,17 @@ p {
   font-size: 37px;
   align-self: center;
   cursor: pointer;
-  position: relative;
-  overflow: hidden;
 }
 .resto__presentation__icone__heart-icone {
-  color: grey;
-  height: 0;
-  transition: all 0.2s ease-in-out 0s;
+  opacity: 0.5;
 }
-.resto__presentation__icone__heart-icone:hover, .resto__presentation__icone__heart-icone :active {
+.resto__presentation__icone__heart-icone:hover {
   background: -webkit-gradient(linear, right top, left bottom, from(#9356DC), to(#FF79DA));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
+  opacity: 1;
   height: 100%;
 }
 
@@ -538,7 +537,8 @@ footer {
   background: white;
   cursor: pointer;
   position: relative;
-  animation: slideDown 2s;
+  animation: slideUp 2s;
+  animation-fill-mode: backwards;
 }
 .carte__box__menu__main {
   width: 100%;
@@ -552,35 +552,40 @@ footer {
 }
 .carte__box__menu__price__euros {
   align-self: flex-end;
+  transform: translateX(70px) ease-in;
+  transform-origin: right;
+  transition: transform 0.5s;
+  right: -60px;
 }
 .carte__box__menu__price__icon {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #99E2D0;
-  font-size: 26px;
-  width: 0%;
   height: 51px;
   border-radius: 0 15px 15px 0;
   background: #99E2D0;
   margin: 0;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 1000ms cubic-bezier(0.32, 0, 0.07, 1);
+  transition: transform 0.5s cubic-bezier(0.32, 0, 0.07, 1);
 }
 .carte__box__menu__price__icon__check-icon {
-  background: white;
-  color: #99E2D0;
+  background: #99E2D0;
+  color: white;
+  font-size: 24px;
   border-radius: 50%;
-  transform: rotate(-1turn);
-  transition: transform 500ms ease-in-out;
+  transition: transform 0.5s;
+}
+.carte__box__menu:hover .carte__box__menu__price__euros {
+  transform: translateX(-10px);
 }
 .carte__box__menu:hover .carte__box__menu__price__icon {
   transform: scaleX(1);
-  width: 70px;
+  width: 60px;
 }
 .carte__box__menu:hover .carte__box__menu__price__icon__check-icon {
-  transform: rotate(360deg);
+  transform: rotate(1turn);
 }
 @media (min-width: 1200px) {
   .carte__box {
@@ -614,7 +619,7 @@ footer {
   }
 }
 
-@keyframes slideDown {
+@keyframes slideUp {
   from {
     transform: translateY(20px);
     opacity: 0;
@@ -624,5 +629,101 @@ footer {
     opacity: 1;
   }
 }
+.carte__box__menu:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.carte__box__menu:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.carte__box__menu:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+.carte__box__menu:nth-child(4) {
+  animation-delay: 1s;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 100%;
+  position: absolute;
+  background: white;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  animation: fadeOut 4.5s forwards;
+}
+.loading__screen {
+  z-index: 2;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: -webkit-gradient(linear, right top, left bottom, from(#9356DC), to(#FF79DA));
+  animation: bouncer 0.4s cubic-bezier(0.19, 0.75, 0.3, 0.98) infinite alternate;
+}
+@media (min-width: 600px) {
+  .loading {
+    padding-top: 35%;
+  }
+}
+@media (min-width: 1200px) {
+  .loading {
+    padding-top: 25%;
+  }
+}
+
+.loading__screen:nth-child(1) {
+  animation-delay: 0.3s;
+  opacity: 0.4;
+}
+
+.loading__screen:nth-child(2) {
+  animation-delay: 0.4s;
+  opacity: 0.6;
+}
+
+.loading__screen:nth-child(3) {
+  animation-delay: 0.5s;
+  opacity: 0.8;
+}
+
+.loading__screen:nth-child(4) {
+  animation-delay: 0.6s;
+  opacity: 1;
+}
+
+@keyframes bouncer {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100px);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    z-index: 3;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.2;
+  }
+  99% {
+    opacity: 0;
+    z-index: 3;
+  }
+  100% {
+    opacity: 0;
+    z-index: -3;
+  }
+}
+@keyframes fillAction {}
 
 /*# sourceMappingURL=style.css.map */

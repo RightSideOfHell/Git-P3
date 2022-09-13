@@ -6,4 +6,5 @@ $color-quaternary: rgb(53, 53, 53);
 $color-shadow: rgb(209, 209, 209);
 $color-btn-shadow: rgb(158, 158, 158);
 $bg-color: rgb(245, 245, 245);
+$heart-bg:-webkit-gradient(linear, right top, left bottom, from($color-primary), to($color-secondary));
 
