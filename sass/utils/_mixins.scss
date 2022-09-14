@@ -13,7 +13,7 @@
 }
 
 //hover//
-@mixin hover {
+@mixin hover-fction {
   &:hover {
     background: lighten($color-secondary,23%);
     .fonctionnement__presentation__box__liste__icone{
@@ -29,19 +29,18 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
-    opacity: 1;
-    height: 100%;
-    
   }
 }
 
 @mixin hover-check-icon {  
   &:hover { 
     .carte__box__menu__price__euros {
-      transform: translateX(-10px);
+      transform: $check-transform;
+      transition: transform $check-transition;
     } 
     .carte__box__menu__price__icon {
-      transform: scaleX(1);
+      transform: $check-transform;
+      transition: transform $check-transition;
       width: 60px; 
     }  
     .carte__box__menu__price__icon__check-icon {  
@@ -50,12 +49,10 @@
   }
 }
 
-
-
 @mixin hover-button {
   &:hover {
     background: lighten($color-primary, 3%);
-    background: lighten($color-secondary, 3%);
+    background: lighten($color-secondary, 1%);
     box-shadow: darken($color-btn-shadow, 100%);
 }
 }
@@ -76,6 +73,3 @@
   border-radius: 3px 3px 3px 3px;
   color: darken($color-tertiary,40%);
 }
-
-//AnimationDelay//
-

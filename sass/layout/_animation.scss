@@ -29,7 +29,7 @@ $nth-child: 1;
   height: 100%;
   width: 100%;
   z-index: 1;
-  animation: fadeOut 4.5s forwards;
+  animation: fadeOut 3s forwards;
   &__screen{
     z-index: 2;
     width: 20px;
@@ -62,8 +62,8 @@ $nth-child: 1;
     opacity: 1;
     z-index: 3;
   } 
-  80% {opacity: 1;}
-  90% {opacity: .2;}
+  90% {opacity: 1;}
+  95% {opacity: .1;}
   99% {
     opacity: 0;
     z-index: 3;}

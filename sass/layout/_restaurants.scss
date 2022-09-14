@@ -69,8 +69,12 @@
         font-size: 37px;
         align-self: center;
         cursor: pointer;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: grey;
+        overflow: hidden;
         &__heart-icone{
-            opacity: .5;
+            transition: all .2s ;
             @include hover-icon
         }
     }

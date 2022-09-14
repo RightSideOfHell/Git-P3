@@ -185,9 +185,13 @@ p {
   font-size: 37px;
   align-self: center;
   cursor: pointer;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: grey;
+  overflow: hidden;
 }
 .resto__presentation__icone__heart-icone {
-  opacity: 0.5;
+  transition: all 0.2s;
 }
 .resto__presentation__icone__heart-icone:hover {
   background: -webkit-gradient(linear, right top, left bottom, from(#9356DC), to(#FF79DA));
@@ -195,8 +199,6 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
-  opacity: 1;
-  height: 100%;
 }
 
 .explore_button {
@@ -217,7 +219,7 @@ p {
 }
 .explore_button:hover {
   background: #9b63df;
-  background: #ff88de;
+  background: #ff7edb;
   box-shadow: black;
 }
 
@@ -539,6 +541,7 @@ footer {
   position: relative;
   animation: slideUp 2s;
   animation-fill-mode: backwards;
+  overflow: hidden;
 }
 .carte__box__menu__main {
   width: 100%;
@@ -549,39 +552,44 @@ footer {
   right: 0;
   display: flex;
   flex-grow: 1;
+  transform: translateX(60px);
+  transform-origin: right;
+  transition: transform 0.7s cubic-bezier(0.32, 0, 0.07, 1);
 }
 .carte__box__menu__price__euros {
   align-self: flex-end;
-  transform: translateX(70px) ease-in;
+  transform: translateX(0);
   transform-origin: right;
-  transition: transform 0.5s;
-  right: -60px;
+  transition: transform 0.7s;
+  margin-right: 10px;
 }
 .carte__box__menu__price__icon {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #99E2D0;
-  height: 51px;
-  border-radius: 0 15px 15px 0;
+  width: 60px;
+  height: 52px;
   background: #99E2D0;
   margin: 0;
-  transform: scaleX(0);
+  transform: translateX(0);
   transform-origin: right;
-  transition: transform 0.5s cubic-bezier(0.32, 0, 0.07, 1);
+  transition: transform 0.7s cubic-bezier(0.32, 0, 0.07, 1);
 }
 .carte__box__menu__price__icon__check-icon {
   background: #99E2D0;
   color: white;
   font-size: 24px;
   border-radius: 50%;
-  transition: transform 0.5s;
+  transition: transform 0.4s;
 }
 .carte__box__menu:hover .carte__box__menu__price__euros {
-  transform: translateX(-10px);
+  transform: translateX(-60px);
+  transition: transform 0.7s cubic-bezier(0.32, 0, 0.07, 1);
 }
 .carte__box__menu:hover .carte__box__menu__price__icon {
-  transform: scaleX(1);
+  transform: translateX(-60px);
+  transition: transform 0.7s cubic-bezier(0.32, 0, 0.07, 1);
   width: 60px;
 }
 .carte__box__menu:hover .carte__box__menu__price__icon__check-icon {
@@ -655,7 +663,7 @@ footer {
   height: 100%;
   width: 100%;
   z-index: 1;
-  animation: fadeOut 4.5s forwards;
+  animation: fadeOut 3s forwards;
 }
 .loading__screen {
   z-index: 2;
@@ -709,11 +717,11 @@ footer {
     opacity: 1;
     z-index: 3;
   }
-  80% {
+  90% {
     opacity: 1;
   }
-  90% {
-    opacity: 0.2;
+  95% {
+    opacity: 0.1;
   }
   99% {
     opacity: 0;

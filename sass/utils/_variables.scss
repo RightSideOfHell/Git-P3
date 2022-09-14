@@ -8,3 +8,6 @@ $color-btn-shadow: rgb(158, 158, 158);
 $bg-color: rgb(245, 245, 245);
 $heart-bg:-webkit-gradient(linear, right top, left bottom, from($color-primary), to($color-secondary));
 
+//animations
+$check-transform: translateX(-60px);
+$check-transition: .7s cubic-bezier(.32,0,.07,1);
