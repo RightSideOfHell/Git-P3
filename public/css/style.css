@@ -722,11 +722,8 @@ footer {
     opacity: 1;
     z-index: 3;
   }
-  90% {
+  95% {
     opacity: 1;
-  }
-  98% {
-    opacity: 0.1;
   }
   99% {
     opacity: 0;
