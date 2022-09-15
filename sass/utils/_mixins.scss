@@ -29,6 +29,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
+    animation: hover-heart 1.5s;
   }
 }
 
@@ -44,7 +45,12 @@
       width: 60px; 
     }  
     .carte__box__menu__price__icon__check-icon {  
-      transform: rotate(1turn);
+      animation: check-rotate .5s forwards;
+      @keyframes check-rotate {
+        from {transform: rotate(0deg);}
+        to {transform: rotate(360deg);}
+        
+      }
     }
   }
 }

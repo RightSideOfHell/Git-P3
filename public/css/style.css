@@ -182,16 +182,13 @@ p {
   padding: 10px;
 }
 .resto__presentation__icone {
-  font-size: 37px;
   align-self: center;
   cursor: pointer;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: grey;
+  color: rgb(92, 92, 92);
   overflow: hidden;
 }
 .resto__presentation__icone__heart-icone {
-  transition: all 0.2s;
+  font-size: 36px;
 }
 .resto__presentation__icone__heart-icone:hover {
   background: -webkit-gradient(linear, right top, left bottom, from(#9356DC), to(#FF79DA));
@@ -199,6 +196,7 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 900;
+  animation: hover-heart 1.5s;
 }
 
 .explore_button {
@@ -554,13 +552,13 @@ footer {
   flex-grow: 1;
   transform: translateX(60px);
   transform-origin: right;
-  transition: transform 0.7s cubic-bezier(0.32, 0, 0.07, 1);
+  transition: transform 0.6s cubic-bezier(0.32, 0, 0.07, 1);
 }
 .carte__box__menu__price__euros {
   align-self: flex-end;
   transform: translateX(0);
   transform-origin: right;
-  transition: transform 0.7s;
+  transition: transform 0.5s;
   margin-right: 10px;
 }
 .carte__box__menu__price__icon {
@@ -574,26 +572,33 @@ footer {
   margin: 0;
   transform: translateX(0);
   transform-origin: right;
-  transition: transform 0.7s cubic-bezier(0.32, 0, 0.07, 1);
+  transition: transform 0.6s cubic-bezier(0.32, 0, 0.07, 1);
 }
 .carte__box__menu__price__icon__check-icon {
   background: #99E2D0;
   color: white;
   font-size: 24px;
   border-radius: 50%;
-  transition: transform 0.4s;
 }
 .carte__box__menu:hover .carte__box__menu__price__euros {
   transform: translateX(-60px);
-  transition: transform 0.7s cubic-bezier(0.32, 0, 0.07, 1);
+  transition: transform 0.6s cubic-bezier(0.32, 0, 0.07, 1);
 }
 .carte__box__menu:hover .carte__box__menu__price__icon {
   transform: translateX(-60px);
-  transition: transform 0.7s cubic-bezier(0.32, 0, 0.07, 1);
+  transition: transform 0.6s cubic-bezier(0.32, 0, 0.07, 1);
   width: 60px;
 }
 .carte__box__menu:hover .carte__box__menu__price__icon__check-icon {
-  transform: rotate(1turn);
+  animation: check-rotate 0.5s forwards;
+}
+@keyframes check-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 @media (min-width: 1200px) {
   .carte__box {
@@ -720,7 +725,7 @@ footer {
   90% {
     opacity: 1;
   }
-  95% {
+  98% {
     opacity: 0.1;
   }
   99% {
@@ -732,6 +737,15 @@ footer {
     z-index: -3;
   }
 }
-@keyframes fillAction {}
+@keyframes hover-heart {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

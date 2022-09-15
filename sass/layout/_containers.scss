@@ -125,7 +125,7 @@
                     align-self: flex-end;
                     transform: translateX(0);
                     transform-origin: right; 
-                    transition: transform .7s;
+                    transition: transform .5s;
                     margin-right: 10px;
                 }
                 &__icon {
@@ -145,7 +145,6 @@
                         color: white;
                         font-size: 24px;
                         border-radius: 50%;
-                        transition: transform .4s;
                     }
                 }
             }     

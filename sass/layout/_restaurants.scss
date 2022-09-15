@@ -66,16 +66,13 @@
         padding: 10px;
     }
     &__icone{
-        font-size: 37px;
         align-self: center;
         cursor: pointer;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: grey;
+        color: rgb(92, 92, 92);
         overflow: hidden;
         &__heart-icone{
-            transition: all .2s ;
-            @include hover-icon
+            font-size: 36px;
+            @include hover-icon;        
         }
     }
 }
