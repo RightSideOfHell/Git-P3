@@ -18,11 +18,13 @@ $nth-child: 1;
   $nth-child: $nth-child + 1;
 }
 
+
+
 //loading-screen animation//
 .loading{
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 5px;
   padding-top: 100%;
   position: absolute;
   background: white;
@@ -32,29 +34,31 @@ $nth-child: 1;
   animation: fadeOut 3s forwards;
   &__screen{
     z-index: 2;
-    width: 20px;
+    /*width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: $heart-bg;
+    background: $heart-bg;*/
+    color: $color-primary;
+    font-size: 42px;
+    font-family: $police-titre-logo;
     animation: bouncer .4s cubic-bezier(.19,.75,.3,.98) infinite alternate;
   }
   @include tablet-portrait-up{padding-top: 35%;}
   @include desktop-up{padding-top: 25%;}
-  
 }
 
 $nth-child: 1;
-@while $nth-child < 5 {
+@while $nth-child < 100 {
   .loading__screen:nth-child(#{$nth-child}) {
-      animation-delay: (0.1s * $nth-child) + 0.2s;
-      opacity: (.2 * $nth-child) + .2;
+    animation-delay: (0.1s * $nth-child) + 0.2s;
+    opacity: (.2 * $nth-child) + .2;
   }
   $nth-child: $nth-child + 1;
 }
 
 @keyframes bouncer {
   from {transform: translateY(0);}
-  to {transform: translateY(-100px);}
+  to {transform: translateY(-50px);}
 }
 
 @keyframes fadeOut {
@@ -72,6 +76,8 @@ $nth-child: 1;
     z-index: -3;
   }
 }
+
+
 
 //hearts-animation//
 @keyframes hover-heart {

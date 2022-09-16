@@ -69,10 +69,13 @@
         align-self: center;
         cursor: pointer;
         color: rgb(92, 92, 92);
-        overflow: hidden;
+        width: 37px;
+        height: 37px;
+        overflow: hidden;       
         &__heart-icone{
             font-size: 36px;
-            @include hover-icon;        
+            align-self: center;
+            @include click-icon;  
         }
     }
 }

@@ -59,24 +59,19 @@ h4{
     font-weight: bolder;
     margin-top: 5px;
     margin-bottom: 5px;   
+    @include ellipsis;  
+   
 }
 h5{
-    font-family: $police-texte;
-    font-size: 14px;
-    margin-top: 5px;
-    margin-bottom: 5px;
     font-weight: lighter;
-    white-space: nowrap; 
-    max-width: 60%; 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    flex-grow: 1;  
+    
+    @include text-settings;
+    @include ellipsis;
+   
+    
 }
 
 p
 {
-    font-family: $police-texte;
-    font-size: 14px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    @include text-settings
 }

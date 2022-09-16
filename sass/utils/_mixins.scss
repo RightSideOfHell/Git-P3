@@ -1,4 +1,4 @@
-//breakpoints//
+//breakpoints
 @mixin mobile {
   @media (max-width: 599px) { @content; }
 }
@@ -12,7 +12,23 @@
   @media (min-width: 1800px) { @content; }
 }
 
-//hover//
+
+//typography mixin//
+@mixin ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  overflow: hidden;  
+}
+@mixin text-settings {
+  font-family: $police-texte;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+
+//hover
 @mixin hover-fction {
   &:hover {
     background: lighten($color-secondary,23%);
@@ -22,8 +38,8 @@
   }
 }
 
-@mixin hover-icon {
-  &:hover{
+@mixin click-icon {
+  &:active{
     background: $heart-bg;
     background-clip: text;
     -webkit-background-clip: text;
@@ -35,21 +51,19 @@
 
 @mixin hover-check-icon {  
   &:hover { 
-    .carte__box__menu__price__euros {
-      transform: $check-transform;
+    .carte__box__menu__main{
+      @include ellipsis;
+      width: 66%;
+    }
+    .carte__box__menu__price{
+      transform: translateX(0);
       transition: transform $check-transition;
-    } 
-    .carte__box__menu__price__icon {
-      transform: $check-transform;
-      transition: transform $check-transition;
-      width: 60px; 
-    }  
+    }
     .carte__box__menu__price__icon__check-icon {  
       animation: check-rotate .5s forwards;
       @keyframes check-rotate {
         from {transform: rotate(0deg);}
         to {transform: rotate(360deg);}
-        
       }
     }
   }
@@ -57,14 +71,13 @@
 
 @mixin hover-button {
   &:hover {
-    background: lighten($color-primary, 3%);
-    background: lighten($color-secondary, 1%);
-    box-shadow: darken($color-btn-shadow, 100%);
+    opacity: .8;
+    box-shadow: 2px 6px 5px $color-btn-shadow;
 }
 }
 
          
-//Nouveau//
+//Nouveau
 @mixin new-tag {
   position: absolute;
   right: 0;
