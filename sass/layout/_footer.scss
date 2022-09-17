@@ -11,8 +11,8 @@ footer{
     &__more{
         &__blocks{
             display: flex;
-            gap: 15px;
             align-items: center;
+            gap: 15px;
             color: white;
             @include tablet-portrait-up {
                 flex-grow: 1;
@@ -41,8 +41,6 @@ footer{
 }
 @include desktop-up {
     padding-bottom: 40px;
-    h3 {
-        font-size: 30px;
-    }
+    h3 { font-size: 30px; }
 }
 }

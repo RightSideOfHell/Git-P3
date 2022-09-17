@@ -60,17 +60,12 @@ h4{
     margin-top: 5px;
     margin-bottom: 5px;   
     @include ellipsis;  
-   
 }
+
 h5{
     font-weight: lighter;
     @include text-settings;
     @include ellipsis;
-   
-    
 }
 
-p
-{
-    @include text-settings
-}
+p{ @include text-settings }

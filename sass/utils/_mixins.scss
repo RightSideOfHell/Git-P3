@@ -89,6 +89,6 @@
   text-align: center;
   margin: 15px;
   background: $color-tertiary;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: $newTagRadius;
   color: darken($color-tertiary,40%);
 }

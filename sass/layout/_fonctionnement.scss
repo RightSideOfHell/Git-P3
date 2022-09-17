@@ -23,16 +23,15 @@
             flex-wrap: wrap;
             &__box {
                 display: flex;
-                flex-grow: 1;
-                flex-shrink: 1;
                 align-items: center;
+                flex-grow: 1;
                 width: 90%;
                 transform: translate(-15px);
                 &__number {
                     text-align: center;
                     width: 22px;
                     border: 1px solid $color-primary;
-                    border-radius: 22px 22px 22px 22px;
+                    border-radius: 50%;
                     background-color: $color-primary;
                     padding: 6px;
                     color: white;
