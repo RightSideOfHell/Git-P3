@@ -544,7 +544,7 @@ footer {
   position: relative;
 }
 .carte__box__menu__main {
-  width: 85%;
+  width: 80%;
   padding-left: 15px;
   transition: all ease 0.7s;
 }
@@ -586,7 +586,7 @@ footer {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 66%;
+  width: 65%;
 }
 .carte__box__menu:hover .carte__box__menu__price {
   transform: translateX(0);

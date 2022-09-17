@@ -53,7 +53,7 @@
   &:hover { 
     .carte__box__menu__main{
       @include ellipsis;
-      width: 66%;
+      width: 65%;
     }
     .carte__box__menu__price{
       transform: translateX(0);
