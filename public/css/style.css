@@ -91,7 +91,7 @@ p {
 
 .navigation {
   padding-bottom: 50px;
-  background: white;
+  background: #fafafa;
 }
 @media (min-width: 1200px) {
   .navigation {
@@ -122,12 +122,12 @@ p {
   position: absolute;
   right: 0;
   min-width: 120px;
+  margin: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
   font-weight: bold;
   font-size: 18px;
   text-align: center;
-  margin: 15px;
   background: #99E2D0;
   border-radius: 3px 3px 3px 3px;
   color: #278870;
@@ -218,6 +218,7 @@ p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  cursor: pointer;
 }
 .explore_button:hover {
   opacity: 0.8;
@@ -226,15 +227,22 @@ p {
 
 .btn {
   display: flex;
+  padding-bottom: 50px;
   width: 100%;
   margin: auto;
-  padding-bottom: 50px;
 }
 
 header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.fa-arrow-left {
+  margin-left: 20px;
 }
 
 .big__logo {
@@ -249,9 +257,9 @@ header {
 }
 
 .fonctionnement__titre {
+  padding-top: 50px;
   width: 90%;
   margin: auto;
-  padding-top: 50px;
 }
 @media (min-width: 600px) {
   .fonctionnement__titre {
@@ -269,11 +277,11 @@ header {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-  margin: auto;
   margin-bottom: 80px;
   padding: 0;
   flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
 }
 .fonctionnement__presentation__box {
   display: flex;
@@ -298,14 +306,13 @@ header {
   flex-grow: 1;
   flex-shrink: 1;
   max-width: 420px;
-  background: white;
+  background: #fafafa;
   border-radius: 25px 25px 25px 25px;
-  box-shadow: 2px 8px 10px rgb(209, 209, 209);
+  box-shadow: 2px 7px 10px rgb(209, 209, 209);
   margin-top: 20px;
   margin-bottom: 30px;
   padding: 30px;
   gap: 10%;
-  cursor: pointer;
 }
 .fonctionnement__presentation__box__liste:hover {
   background: #ffeefa;
@@ -328,7 +335,7 @@ header {
   font-size: 25px;
   padding-left: 5%;
   align-self: center;
-  color: grey;
+  opacity: 0.5;
 }
 @media (min-width: 600px) {
   .fonctionnement__presentation__box__liste {
@@ -429,11 +436,12 @@ footer {
   margin-top: 24px;
   padding-top: 13px;
   padding-bottom: 14px;
-  background-color: rgb(245, 245, 245);
+  background-color: #fafafa;
   background: linear-gradient(rgb(187, 187, 187), rgb(245, 245, 245) 8%);
   gap: 10px;
   align-items: center;
 }
+
 .fa-location-dot {
   height: 20px;
   font-size: 22px;
@@ -444,9 +452,9 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: #fafafa;
   width: 100%;
   margin: auto;
-  background-color: white;
 }
 .presentation__titre {
   width: 75%;
@@ -460,31 +468,30 @@ footer {
   margin: auto;
   text-align: center;
   font-size: 22px;
-  color: grey;
 }
 
 .menus {
-  background: rgb(245, 245, 245);
+  background: #fafafa;
 }
 .menus__all {
+  background: #fafafa;
   width: 100%;
   margin: auto;
-  background: rgb(245, 245, 245);
 }
 @media (max-width: 599px) {
   .menus__all {
     position: absolute;
     top: 280px;
-    margin: auto;
-    width: 100%;
     border-radius: 35px 35px 0 0;
+    width: 100%;
+    margin: auto;
   }
 }
 .menus__img {
-  width: 100%;
-  margin: auto;
   max-height: 350px;
   object-fit: cover;
+  width: 100%;
+  margin: auto;
 }
 @media (min-width: 1200px) {
   .menus__img {
@@ -600,8 +607,8 @@ footer {
 }
 @media (min-width: 600px) {
   .carte__box {
-    margin: auto;
     width: 90%;
+    margin: auto;
   }
 }
 @media (min-width: 1200px) {
@@ -665,10 +672,6 @@ footer {
 }
 .loading__screen {
   z-index: 2;
-  /*width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: $heart-bg;*/
   color: #9356DC;
   font-size: 42px;
   font-family: "Shrikhand", cursive;

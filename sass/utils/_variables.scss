@@ -5,18 +5,25 @@ $color-tertiary: #99E2D0;
 $color-quaternary: rgb(53, 53, 53);
 $color-shadow: rgb(209, 209, 209);
 $color-btn-shadow: rgb(158, 158, 158);
+$footerTextColor: white;
 $btn-bg:linear-gradient(to bottom right, $color-secondary, $color-primary);
+$bg-color: rgb(245, 245, 245);
+$light-bgColor: lighten($bg-color, 2%);
+
+$heart-bg:-webkit-gradient(linear, right top, left bottom, from($color-primary), to($color-secondary));
 $boxShaddow-btn: 1px 3px 10px; 
 $restoShaddow: 2px 7px 10px;
-$bg-color: rgb(245, 245, 245);
-$heart-bg:-webkit-gradient(linear, right top, left bottom, from($color-primary), to($color-secondary));
+
 
 //animations
 $check-transform: translateX(0px);
 $check-transition: .6s cubic-bezier(.32,0,.07,1);
 
+
 //layout
 $restoRadius: 15px 15px 15px 15px;
 $imgRadius: 15px 15px 0 0;
 $btnRadius: 35px 35px 35px 35px;
+$menuRadius: 35px 35px 0 0;
 $newTagRadius: 3px 3px 3px 3px;
+$fctBoxRadius: 25px 25px 25px 25px;

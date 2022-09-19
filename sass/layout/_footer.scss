@@ -3,17 +3,16 @@ footer{
     background-color: $color-quaternary;
 }
 .about{
-    width: 90%;
-    margin: auto;
+    @include AutoCenter90;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: white;
+    color: $footerTextColor;
     &__more{
         &__blocks{
             display: flex;
             align-items: center;
             gap: 15px;
-            color: white;
+            color: $footerTextColor;
             @include tablet-portrait-up {
                 flex-grow: 1;
             }

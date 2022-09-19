@@ -82,13 +82,24 @@
   position: absolute;
   right: 0;
   min-width: 120px;
+  margin: 15px;
   padding-top: 5px;
   padding-bottom: 5px;
   font-weight: bold;
   font-size: 18px;
   text-align: center;
-  margin: 15px;
   background: $color-tertiary;
   border-radius: $newTagRadius;
   color: darken($color-tertiary,40%);
+}
+
+
+//Center
+@mixin AutoCenter {
+  width: 100%;
+  margin: auto;
+}
+@mixin AutoCenter90 {
+  width: 90%;
+  margin: auto;
 }

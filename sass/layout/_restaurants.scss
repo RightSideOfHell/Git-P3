@@ -1,14 +1,13 @@
 .navigation{
     padding-bottom: 50px;
-    background: lighten($bg-color, 6%);
+    background: $light-bgColor;
     @include desktop-up {
         margin-top: 70px;
         padding-bottom: 200px;
     }
 }
 .restaurants{
-    width: 90%;
-    margin: auto;
+    @include AutoCenter90;
     display: flex;
     flex-direction: column;
     &__liste{
@@ -20,19 +19,15 @@
             border-radius: $restoRadius;
             box-shadow: $restoShaddow $color-shadow;
             position: relative;
-            background: white;
-            &__new{
-                @include new-tag
-            }
+            background: $footerTextColor;
+            &__new{ @include new-tag }
             &__image{
                 align-items: center;
                 height: 220px;
                 width: 100%;
                 object-fit: cover;
                 border-radius: $imgRadius;
-            @include desktop-up {
-                height: 250px;
-            }  
+            @include desktop-up { height: 250px; }  
             }
         @include tablet-portrait-up {
             width: 45%; 
@@ -51,9 +46,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    @include desktop-up {
-        width: 100%;
-    }
+    @include desktop-up { width: 100%; }
     }
 }
 .resto__presentation{

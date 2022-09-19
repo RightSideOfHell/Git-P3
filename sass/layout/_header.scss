@@ -1,14 +1,17 @@
 header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+.fa-arrow-left{ margin-left: 20px; }
+
 .big__logo{
     width: 180px;
     display: block;
     margin: auto;
-    @include desktop-up{
-        width: 300px;
-    }
+    @include desktop-up{ width: 300px; }
 }
