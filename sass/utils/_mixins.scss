@@ -39,7 +39,7 @@
 }
 
 @mixin click-icon {
-  &:active{
+  &:hover{
     background: $heart-bg;
     background-clip: text;
     -webkit-background-clip: text;
